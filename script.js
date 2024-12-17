@@ -14,17 +14,23 @@ const handleForm = (e) => {
 			if(age.value > 18){
 				setTimeout(() => {
 					resolve(
-						alert(`Welcome, ${name.value}. You can vote.`)
+						// alert(`Welcome, ${name.value}. You can vote.`)
+						`Welcome, ${name.value}. You can vote.`
 					);
 				}, 4000)
 			}else{
 				// setTimeout(() => {
 				reject(
-					alert(`Oh sorry ${name.value}. You aren't old enough.`)
+					// alert(`Oh sorry ${name.value}. You aren't old enough.`)
+					`Oh sorry ${name.value}. You aren't old enough.`
 				);
 				// }, 4000)
 			}
 		})
+		promise.then((res)=>{
+			alert(res);
+		})
+		.catch((err) => alert(err));
 	}
 }
 
