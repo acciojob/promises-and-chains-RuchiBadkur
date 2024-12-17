@@ -18,11 +18,11 @@ const handleForm = (e) => {
 					);
 				}, 4000)
 			}else{
-				setTimeout(() => {
+				// setTimeout(() => {
 				reject(
 					alert(`Oh sorry ${name.value}. You aren't old enough.`)
 				);
-				}, 4000)
+				// }, 4000)
 			}
 		})
 	}
