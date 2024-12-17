@@ -6,10 +6,10 @@ const btn = document.getElementById("btn");
 
 const handleForm = (e) => {
 	e.preventDefault();
-	if(!name.value  || !age.value ){
+	if(name.value ===""  || age.value==="" ){
 		alert("inputs cannot be empty.");
 	} else{
-		alert(name.value+ " "+age.value);
+		// alert(name.value+ " "+age.value);
 		const promise = new Promise((resolve, reject) => {
 			if(age.value > 18){
 				setTimeout(() => {
