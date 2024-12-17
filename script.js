@@ -7,7 +7,7 @@ const btn = document.getElementById("btn");
 const handleForm = (e) => {
 	e.preventDefault();
 	if(name.value ===""  || age.value==="" ){
-		alert("inputs cannot be empty.");
+		alert("Please enter valid details");
 	} else{
 		// alert(name.value+ " "+age.value);
 		const promise = new Promise((resolve, reject) => {
